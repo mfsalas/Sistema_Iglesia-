@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'rolepermissions',
     'apps.ministerio',
     'apps.evento',
-
+    'apps.inventario',
+    'apps.entrada',
+    'apps.salida',
 
 
     'widget_tweaks',
