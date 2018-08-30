@@ -19,3 +19,6 @@ def update_stock(sender, instance, **kwargs):
 
 # register the signal
 signals.post_save.connect(update_stock, sender=Entrada, dispatch_uid="update_stock_count")
+
+def suma(self):
+		return self.cantidad_entrada * self.id_articulo.precio_Compra_articulo

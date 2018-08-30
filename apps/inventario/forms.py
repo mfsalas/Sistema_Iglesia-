@@ -11,13 +11,13 @@ class ArticuloForm(forms.ModelForm):
             'descripcion_articulo',
             'cantidad_articulo',
             'id_unidad_de_medida',
-            'id_ministerio',
+            'precio_Compra_articulo',
         ]
         labels = {
             'descripcion_articulo': 'Descripcion Articulo',
             'cantidad_articulo': 'Cantidad',
-            'id_unidad_de_medida': 'Unidad de Medida',
-            'id_ministerio': 'Ministerio',
+            'precio_Compra_articulo': 'Precio Articulo',
+
         }
 
 class Unidadad_de_MedidaForm(forms.ModelForm):

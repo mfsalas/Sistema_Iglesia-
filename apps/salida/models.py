@@ -10,6 +10,7 @@ class Salida(models.Model):
     id_articulo = models.ForeignKey(Articulo, null=True, blank=True, on_delete=models.CASCADE)
     id_ministerio = models.ForeignKey(Ministerios, null=True, blank=True, on_delete=models.CASCADE)
     cantidad_salida = models.PositiveSmallIntegerField()
+    fecha_salida = models.DateField(null=False, blank=False)
     observaciones_salida = models.CharField(max_length=100)
 
 def update_stock(sender, instance, **kwargs):

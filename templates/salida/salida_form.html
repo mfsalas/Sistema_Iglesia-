@@ -16,3 +16,13 @@
 </form>
 </div>
 {% endblock %}
+{% block extrajs %}
+<script>
+	$('#id_fecha_salida').datepicker({
+			todayBtn: "linked",
+	    dateFormat: 'dd/mm/yy',
+			language: "es",
+	})
+
+</script>
+{% endblock %}

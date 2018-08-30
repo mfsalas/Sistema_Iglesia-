@@ -11,7 +11,7 @@
 			<td>Descripcion Articulo</td>
 			<td>Cantidad</td>
 			<td>Unidad de Medida</td>
-			<td>Ministerio</td>
+			<td>Precio Articulo</td>
 		</tr>
 	</thead>
 	<tbody>
@@ -21,7 +21,7 @@
 			<td>{{ p.descripcion_articulo }}</td>
 			<td>{{ p.cantidad_articulo }}</td>
 			<td>{{ p.id_unidad_de_medida.nombre_unidad }}</td>
-			<td>{{ p.id_ministerio.nombre_ministerio }}</td>
+			<td>{{ p.precio_Compra_articulo}}</td>
 			<td>
 			<ul>{% for unidad_de_medida in articulo.id_articulo %}
 				<li>
